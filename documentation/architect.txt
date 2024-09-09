@@ -1,0 +1,18 @@
+1. .angular - Cache files which is used only for the development
+2. .vscode (IDE temporary files)
+3. node_modules - where we are keeping all the third party packages &
+pre-defined packages to execute angular (not managed)
+
+4. src - primary folder for the development
+
+5. .gitignore
+6. angular.json - main file for Angular
+(adding css/js files or any other files required for the application)
+It handles the dev/staging/qa/production environments
+
+7. package-lock.json & package.json - going to handle the packages
+8. Readme.md - to describe the project
+9. tsconfig.json - to configure the typescript compiler
+10. tsconfig.app.json - to configure the typescript compiler
+11. tsconfig.spec.json - to configure the typescript compiler
+12. server.ts - to configure the typescript compiler

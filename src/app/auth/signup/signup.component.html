@@ -1,0 +1,49 @@
+<main class="main">
+  <div class="content">
+    <h1>Sign Up Screen</h1>
+
+    <form [formGroup]="signUpForm">
+      <label for="firstName">First Name: </label>
+      <input type="text" id="firstName" class="form-control" minlength="4" formControlName="firstName" />
+      <br>
+
+      <label for="lastName">Last Name: </label>
+      <input type="text" id="lastName" class="form-control" minlength="4" formControlName="lastName" />
+      <br>
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" class="form-control" minlength="4" formControlName="email" />
+      <br>
+
+      <label for="password">Password: </label>
+      <input type="password" id="password" class="form-control" minlength="4" formControlName="password" />
+      <br>
+
+      <label for="confirmPassword">Confirm Password: </label>
+      <input type="password" id="confirmPassword" class="form-control" minlength="4"
+        formControlName="confirmPassword" />
+      <br>
+
+      <label for="gender">Gender: </label>
+      <select id="gender" class="formControl" formControlName="gender">
+        <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
+      </select>
+      <br>
+
+      <label for="country">Choose your Country: </label>
+      <select id="country" class="formControl" formControlName="country">
+        <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+      </select>
+      <br>
+
+      <label for="address">Address: </label>
+      <textarea class="formControl" formControlName="address"></textarea>
+      <br>
+    </form>
+    <br>
+    <button class="btn btn-primary" (click)="onSubmit()">Sign Up</button>
+    <button class="btn btn-primary" (click)="signInNav()">Sign In</button>
+    <br>
+    <a class="forgot-password" href="forgot">Forgot Password?</a>
+  </div>
+</main>

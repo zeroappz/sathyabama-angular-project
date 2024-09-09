@@ -1,0 +1,26 @@
+<div class="container pt-4">
+  <h1>User Record</h1>
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Country</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let user of users; let i = index">
+      <tr>
+        <td>{{ i+1 }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.country }}</td>
+        <td>{{ user.address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

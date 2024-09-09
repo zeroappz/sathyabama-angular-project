@@ -1,0 +1,22 @@
+<main class="main">
+  <div class="content">
+    <h1>Sign in Page</h1>
+    <label for="name">Name: </label>
+    <input class="form-control" type="text" id="name" [formControl]="name">
+    <p> Name: {{ name.value }}</p>
+
+    <label for="email">Email: </label>
+    <input class="form-control" type="email" id="email" [formControl]="email">
+    <p> Email: {{ email.value }}</p>
+
+    <label for="password">Password: </label>
+    <input class="form-control" type="password" id="password" [formControl]="password">
+    <p> Password: {{ password.value }}</p>
+
+    <button class="btn btn-primary" (click)="onSubmit()">Sign In</button>
+    <button class="btn btn-primary" (click)="signUpNav()">Sign Up</button>
+
+    <br>
+    <a class="forgot-password" href="forgot">Forgot Password?</a>
+  </div>
+</main>
